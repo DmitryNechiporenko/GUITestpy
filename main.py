@@ -44,27 +44,27 @@ class Main(tk.Frame):
         toolbar = tk.Frame(bg='#d7d8e0', bd=2)
         toolbar.pack(side=tk.TOP, fill=tk.X)
 
-        self.add_img = tk.PhotoImage(file='add.gif')
+        self.add_img = tk.PhotoImage(file='img/add.gif')
         btn_open_dialog = tk.Button(toolbar, text='Добавить позицию', command=self.open_dialog, bg='#d7d8e0', bd=0,
                                     compound=tk.TOP, image=self.add_img)
         btn_open_dialog.pack(side=tk.LEFT)
 
-        self.update_img = tk.PhotoImage(file='edit.gif')
+        self.update_img = tk.PhotoImage(file='img/edit.gif')
         btn_open_update_dialog = tk.Button(toolbar, text='Редактировать', bg='#d7d8e0', bd=0, image=self.update_img,
                                            compound=tk.TOP, command=self.open_update_dialog)
         btn_open_update_dialog.pack(side=tk.LEFT)
 
-        self.delete_img = tk.PhotoImage(file='delete.gif')
+        self.delete_img = tk.PhotoImage(file='img/delete.gif')
         btn_delete = tk.Button(toolbar, text='Удалить', bg='#d7d8e0', bd=0, image=self.delete_img,
                                compound=tk.TOP, command=self.delete_records)
         btn_delete.pack(side=tk.LEFT)
 
-        self.search_img = tk.PhotoImage(file='search.gif')
+        self.search_img = tk.PhotoImage(file='img/search.gif')
         btn_open_search_dialog = tk.Button(toolbar, text='Поиск', bg='#d7d8e0', bd=0, image=self.search_img,
                                compound=tk.TOP, command=self.open_search_dialog)
         btn_open_search_dialog.pack(side=tk.LEFT)
 
-        self.refresh_img = tk.PhotoImage(file='refresh.gif')
+        self.refresh_img = tk.PhotoImage(file='img/refresh.gif')
         btn_refresh = tk.Button(toolbar, text='Сбросить поиск', bg='#d7d8e0', bd=0, image=self.refresh_img,
                                            compound=tk.TOP, command=self.view_records)
         btn_refresh.pack(side=tk.LEFT)
